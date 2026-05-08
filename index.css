@@ -1,276 +1,179 @@
-body{
+/* General Reset */
+body {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   
-                  
     background-image: url(elegant.jpeg);
-    
-    
     background-repeat: no-repeat;
     background-size: cover;
-    background-position:top;
-   
-height: 100vh;
-   
+    background-position: top;
+    background-attachment: fixed; /* Background scroll nahi hoga */
+    min-height: 100vh;
 }
 
- nav{
+/* Navigation */
+nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-around; /* Elements ko barabar phela dega */
     align-items: center;
     background-color: rgb(211, 179, 179);
     height: 70px;
     position: fixed;
-    top: 0px;
+    top: 0;
     width: 100%;
-    position: fixed;
-    
+    z-index: 1000;
+}
 
- }
-ul {
+nav ul {
     display: flex;
     list-style: none;
-    
+    padding: 0;
 }
 
-ul li a {
+nav ul li a {
     text-decoration: none;
     color: rgb(0, 0, 0);
-   font-size: 22px;
-    margin: 0px 50px;
+    font-size: 18px;
+    margin: 0 20px;
     font-weight: 550;
+    transition: 0.3s;
+}
 
-    
+nav ul li a:hover {
+    color: rgb(255, 252, 252);
 }
-nav img{
-    height: 120px;
-    width: 250px;
-    cursor: pointer;
-    
-}
-.btn1{
+
+.btn1 {
     background-color: rgb(220, 217, 217);
-    padding: 10px 30px;
-    margin: 0px 95px;
+    padding: 8px 20px;
     border-radius: 8px;
     border: none;
     font-size: 15px;
-
-   text-decoration: none;
+    text-decoration: none;
     color: black;
-    
 }
-ul li a:hover{
-    
-    color:rgb(255, 252, 252)
+
+/* Hero Section */
+section {
+    padding-top: 120px; /* Nav bar ke neeche se shuru ho */
+    text-align: center; /* Sub kuch center karne ke liye */
 }
- nav .btn1:hover{
-    background-color: rgb(210, 201, 209);
- }
- section h1{
-    padding-top: 0px;
-  
-    font-family:serif ;
-    font-size: 50PX;
+
+section h1 {
+    font-family: serif;
+    font-size: clamp(30px, 5vw, 50px); /* Responsive font size */
     color: rgb(235, 127, 65);
-    margin-left: -900px;
-    
- }
- section h3{
+    margin: 20px 0;
+}
+
+section h3 {
     color: rgb(249, 122, 122);
-    padding-top: 200px;
-    font-size: 30px;
-    margin-left: 20px;
- }
+    font-size: 24px;
+    margin-top: 40px;
+}
 
- span{
-    color: rgb(239, 138, 155);
- }
- section p{
+section p {
     color: rgb(206, 176, 121);
-    font-size: 25px;
-    margin-left: 20px;
- }
- .btn{
-     color: rgb(0, 0, 0);
-     background-color: rgb(235, 127, 65);
-     padding: 10px 50px;
-     border-radius: 3px;
-     margin-left: 70px;
-     text-decoration: none;
- }
- section a:hover{
-   
-    background-color: rgb(199, 94, 29);
- }
+    font-size: 20px;
+    max-width: 800px;
+    margin: 20px auto; /* Text ko center mein rakhta hai */
+}
 
-.bri{
-    margin-left: 20px;
-    border-radius: 10px;
-    width: 120px;
-    height: 300px;
+.btn {
+    color: rgb(0, 0, 0);
+    background-color: rgb(235, 127, 65);
+    padding: 10px 40px;
+    border-radius: 3px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
 }
-.make{
-     margin-left: 2px;
-    border-radius: 10px;
-    width: 152px;
-    height: 300px;
-    margin-bottom: -50px ;
-}
-.hero{
-    margin-left: 2px;
-    border-radius: 10px;
-    width: 120px;
-    height: 300px;
 
-    
-}
-.descrip{
+/* Image Gallery Section */
+.descrip {
     display: flex;
-    margin-left: 600px;
-    margin-top: -400px;
+    justify-content: center;
+    flex-wrap: wrap; /* Mobile par pictures ek ke neeche ek ayengi */
+    gap: 15px;
+    margin-top: 50px;
 }
-.clr{
-    color: rgb(231, 128, 128);
-    font-size: 45px;
-    font-weight:550 ;
-}
-.des2{
-    padding-top: 350px;
-    margin-left: 20px;
 
-}
-.clr2{
-     color: rgb(231, 128, 128);
-    font-size: 30px;
-    font-weight:550 ;
-    
-}
-.hair{
-    display: flex;
-    height: 200px;
+.bri, .make, .hero {
+    border-radius: 10px;
     width: 200px;
-    margin-left: 700px;
-    margin-top: -280px;
-    
-}
-h1{
-
-    text-align: center;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 300px;
+    object-fit: cover;
 }
 
-.box{
-    border: 2px solid black;
-    height: 250px;
-    width:200px;
-    margin-left: 20px;
-    margin-top: 140px;
-    background-color: rgb(199, 199, 199);
-    border: none;
-    box-shadow:0 22px 20px black
-}
-.box h1{
-    font-family: 'Times New Roman', Times, serif;
-}
-.box p{
-    text-align: center;
-}
-.box1{
+/* Boxes Section (1, 2, 3) */
+.box-container {
     display: flex;
-     border: 2px solid black;
-    height: 250px;
-    width:200px;
-    margin-left: 20px;
-    margin-top: 140px;
-    background-color: rgb(199, 199, 199);
-    border: none;
-    box-shadow:0 22px 20px black;
-    margin-left: 450px;
-    margin-top:-250px ;
-    
-    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
 
-    
-    
-}
-.box1 h1{
-    /* text-align: center; */
-    font-family: 'Times New Roman', Times, serif;
-    margin-top: -3px;
-}
-.box1 p{
-    text-align: center;
-   margin-top: -px;
-}
-.box2{
-    display: flex;
-     border: 2px solid black;
-    height: 250px;
-    width:200px;
-    margin-left: 20px;
-    margin-top: 140px;
+.box, .box1, .box2 {
     background-color: rgb(199, 199, 199);
-    border: none;
-     box-shadow:0 22px 20px black;
-    margin-left: 880px;
-    margin-top:-250px ;
-    flex-direction: column;
-}
-.box2 h1{
-    /* text-align: center; */
-    font-family: 'Times New Roman', Times, serif;
-    margin-top: -3px;
-}
-.box2 p{
+    width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
     text-align: center;
-   margin-top: -px;
 }
-footer{
 
+/* Footer */
+footer {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     background-color: rgb(194, 100, 147);
-    margin-top: 90px;
-    height: 50%;
     justify-content: space-around;
     align-items: center;
-    padding: 40px 40px;
-   
-    
+    padding: 40px;
+    margin-top: 50px;
 }
 
-.footer-menu a{
-    
-    display: flex;
-    flex-direction: column;
-    margin: 30px;
-   text-decoration: none;
-   color: black;
-  
-   
-   
-
-}
-.footer-menu a:hover{
-color: white;
+.footer-menu a {
+    display: block;
+    margin: 10px;
+    text-decoration: none;
+    color: black;
 }
 
-.icon{
-    justify-content: center;
-    align-items: center;
-    margin-left: -210px;
-   
-    
+/* --- MOBILE RESPONSIVE SETTINGS --- */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li a {
+        margin: 5px 0;
+        display: block;
+    }
+
+    .btn1 {
+        margin-top: 10px;
+    }
+
+    section {
+        padding-top: 250px; /* Nav bara hone ki wajah se zyada padding */
+    }
+
+    .box, .box1, .box2 {
+        width: 85%; /* Mobile par box poori screen cover kare */
+    }
+
+    .bri, .make, .hero {
+        width: 45%; /* Mobile par do do images ayengi side by side */
+        height: 200px;
+    }
 }
-.Follow{
-     margin-top: -100px;
-     margin-left: -100px;
-     display: flex;
-    
-
-}
-
-
-
