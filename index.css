@@ -1,0 +1,276 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+                  
+    background-image: url(elegant.jpeg);
+    
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:top;
+   
+height: 100vh;
+   
+}
+
+ nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(211, 179, 179);
+    height: 70px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    position: fixed;
+    
+
+ }
+ul {
+    display: flex;
+    list-style: none;
+    
+}
+
+ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+   font-size: 22px;
+    margin: 0px 50px;
+    font-weight: 550;
+
+    
+}
+nav img{
+    height: 120px;
+    width: 250px;
+    cursor: pointer;
+    
+}
+.btn1{
+    background-color: rgb(220, 217, 217);
+    padding: 10px 30px;
+    margin: 0px 95px;
+    border-radius: 8px;
+    border: none;
+    font-size: 15px;
+
+   text-decoration: none;
+    color: black;
+    
+}
+ul li a:hover{
+    
+    color:rgb(255, 252, 252)
+}
+ nav .btn1:hover{
+    background-color: rgb(210, 201, 209);
+ }
+ section h1{
+    padding-top: 0px;
+  
+    font-family:serif ;
+    font-size: 50PX;
+    color: rgb(235, 127, 65);
+    margin-left: -900px;
+    
+ }
+ section h3{
+    color: rgb(249, 122, 122);
+    padding-top: 200px;
+    font-size: 30px;
+    margin-left: 20px;
+ }
+
+ span{
+    color: rgb(239, 138, 155);
+ }
+ section p{
+    color: rgb(206, 176, 121);
+    font-size: 25px;
+    margin-left: 20px;
+ }
+ .btn{
+     color: rgb(0, 0, 0);
+     background-color: rgb(235, 127, 65);
+     padding: 10px 50px;
+     border-radius: 3px;
+     margin-left: 70px;
+     text-decoration: none;
+ }
+ section a:hover{
+   
+    background-color: rgb(199, 94, 29);
+ }
+
+.bri{
+    margin-left: 20px;
+    border-radius: 10px;
+    width: 120px;
+    height: 300px;
+}
+.make{
+     margin-left: 2px;
+    border-radius: 10px;
+    width: 152px;
+    height: 300px;
+    margin-bottom: -50px ;
+}
+.hero{
+    margin-left: 2px;
+    border-radius: 10px;
+    width: 120px;
+    height: 300px;
+
+    
+}
+.descrip{
+    display: flex;
+    margin-left: 600px;
+    margin-top: -400px;
+}
+.clr{
+    color: rgb(231, 128, 128);
+    font-size: 45px;
+    font-weight:550 ;
+}
+.des2{
+    padding-top: 350px;
+    margin-left: 20px;
+
+}
+.clr2{
+     color: rgb(231, 128, 128);
+    font-size: 30px;
+    font-weight:550 ;
+    
+}
+.hair{
+    display: flex;
+    height: 200px;
+    width: 200px;
+    margin-left: 700px;
+    margin-top: -280px;
+    
+}
+h1{
+
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.box{
+    border: 2px solid black;
+    height: 250px;
+    width:200px;
+    margin-left: 20px;
+    margin-top: 140px;
+    background-color: rgb(199, 199, 199);
+    border: none;
+    box-shadow:0 22px 20px black
+}
+.box h1{
+    font-family: 'Times New Roman', Times, serif;
+}
+.box p{
+    text-align: center;
+}
+.box1{
+    display: flex;
+     border: 2px solid black;
+    height: 250px;
+    width:200px;
+    margin-left: 20px;
+    margin-top: 140px;
+    background-color: rgb(199, 199, 199);
+    border: none;
+    box-shadow:0 22px 20px black;
+    margin-left: 450px;
+    margin-top:-250px ;
+    
+    flex-direction: column;
+
+    
+    
+}
+.box1 h1{
+    /* text-align: center; */
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: -3px;
+}
+.box1 p{
+    text-align: center;
+   margin-top: -px;
+}
+.box2{
+    display: flex;
+     border: 2px solid black;
+    height: 250px;
+    width:200px;
+    margin-left: 20px;
+    margin-top: 140px;
+    background-color: rgb(199, 199, 199);
+    border: none;
+     box-shadow:0 22px 20px black;
+    margin-left: 880px;
+    margin-top:-250px ;
+    flex-direction: column;
+}
+.box2 h1{
+    /* text-align: center; */
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: -3px;
+}
+.box2 p{
+    text-align: center;
+   margin-top: -px;
+}
+footer{
+
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(194, 100, 147);
+    margin-top: 90px;
+    height: 50%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 40px;
+   
+    
+}
+
+.footer-menu a{
+    
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+   text-decoration: none;
+   color: black;
+  
+   
+   
+
+}
+.footer-menu a:hover{
+color: white;
+}
+
+.icon{
+    justify-content: center;
+    align-items: center;
+    margin-left: -210px;
+   
+    
+}
+.Follow{
+     margin-top: -100px;
+     margin-left: -100px;
+     display: flex;
+    
+
+}
+
+
+
